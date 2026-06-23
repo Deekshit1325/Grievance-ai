@@ -9,10 +9,11 @@ from requests.auth import HTTPBasicAuth
 # SERVICENOW CONFIG
 # =========================
 
-INSTANCE_URL = "https://dev378767.service-now.com"
+INSTANCE_URL = st.secrets["INSTANCE_URL"]
 
-USERNAME = "admin"
-PASSWORD = "Password123S"
+USERNAME = st.secrets["USERNAME"]
+
+PASSWORD = st.secrets["PASSWORD"]
 
 TABLE_NAME = "x_2054267_colleg_0_grievance"
 def predict_priority(text):
